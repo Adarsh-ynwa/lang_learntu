@@ -18,6 +18,7 @@ import toast from "react-hot-toast";
 
 import ChatLoader from "../components/ChatLoader";
 import CallButton from "../components/CallButton";
+import CustomGrammarInput from "../components/CustomGrammarInput";
 
 const STREAM_API_KEY = import.meta.env.VITE_STREAM_API_KEY;
 
@@ -103,7 +104,7 @@ const ChatPage = () => {
             <Window>
               <ChannelHeader />
               <MessageList />
-              <MessageInput focus />
+              <CustomGrammarInput channel={channel} />
             </Window>
           </div>
           <Thread />
